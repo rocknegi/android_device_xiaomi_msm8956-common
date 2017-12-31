@@ -112,18 +112,6 @@ WITH_CUSTOM_CHARGER := false
 # CNE
 BOARD_USES_QCNE := true
 
-# Dexpreopt
-ifeq ($(CARDINAL_RELEASE),true)
-ifeq ($(HOST_OS),linux)
-ifneq ($(TARGET_BUILD_VARIANT),eng)
-WITH_DEXPREOPT := true
-WITH_DEXPREOPT_DEBUG_INFO := false
-USE_DEX2OAT_DEBUG := false
-DONT_DEXPREOPT_PREBUILTS := true
-endif
-endif
-endif
-
 # Display
 MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
