@@ -293,7 +293,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-+# Live Wallpapers
+# Live Wallpapers
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     librs_jni    
