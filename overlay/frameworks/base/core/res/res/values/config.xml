@@ -391,4 +391,8 @@
 <!-- Button backlight -->
      <bool name="config_deviceHasButtonBacklight">true</bool>
      <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+
+<!--  Night display -->
+    <bool name="config_nightDisplayAvailable">true</bool>
+
 </resources>
