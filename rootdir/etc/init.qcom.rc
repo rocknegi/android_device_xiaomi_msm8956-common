@@ -267,10 +267,9 @@ on post-fs-data
     #Create folder for mm-qcamera-daemon
     mkdir /data/camera 0770 media camera
 
-    # Create PERFD deamon related dirs
-    mkdir /data/system/perfd 2770 root system
-    rm /data/system/perfd/default_values
-    start perfd
+    #Create PERFD deamon related dirs
+    mkdir /data/system/perfd 0770 root system
+    chmod 2770 /data/system/perfd
 
     # Sensor
     mkdir /persist/sensors 0775 system system
