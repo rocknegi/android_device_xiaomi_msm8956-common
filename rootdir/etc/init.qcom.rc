@@ -271,6 +271,9 @@ on post-fs-data
     mkdir /data/system/perfd 0770 root system
     chmod 2770 /data/system/perfd
 
+    # Create IOP  deamon related dirs
+    mkdir /data/misc/iop 0770 root system
+
     # Sensor
     mkdir /persist/sensors 0775 system system
     chmod 664 /persist/sensors/sensors_settings
