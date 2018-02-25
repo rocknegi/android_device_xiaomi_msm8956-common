@@ -307,9 +307,16 @@ vendor/lib/libQtiTether.so
 vendor/lib/libconnctrl.so
 
 # Perf
+bin/iop
 bin/msm_irqbalance
 vendor/bin/perfd
+vendor/etc/public.libraries.txt
+vendor/lib64/libqti-iop-client.so
+vendor/lib64/libqti-iop.so
 vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti_performance.so
+vendor/lib/libqti-iop-client.so
+vendor/lib/libqti-iop.so
 vendor/lib/libqti-perfd-client.so
 
 # Peripheral manager
