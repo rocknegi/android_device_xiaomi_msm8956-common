@@ -388,15 +388,6 @@
          config to 19. -->
     <integer name="config_deviceHardwareKeys">19</integer>
 
-    <!-- Whether cpu boost is enabled for PanelView fling -->
-    <bool name="config_enableCpuBoostForPanelViewFling">false</bool>
-    <integer-array name="panelview_flingboost_param_value">
-        <item>0x40C00000</item> <!-- SCHEDBOOST resource opcode-->
-        <item>0x1</item>        <!-- SCHEDBOOST resource value-->
-        <item>0x40800000</item> <!-- CPUBOOST_MIN_FREQ resource opcode-->
-        <item>0x514</item>      <!-- CPUBOOST MIN_FREQ resource value-->
-    </integer-array>
-
 <!--  Night display -->
     <bool name="config_nightDisplayAvailable">true</bool>
 
