@@ -284,6 +284,10 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.bt.sh
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.power.rc \
