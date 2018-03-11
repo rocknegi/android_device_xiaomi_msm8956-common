@@ -282,8 +282,9 @@ on post-fs-data
     mkdir /data/camera 0770 media camera
 
     #Create PERFD deamon related dirs
-    mkdir /data/system/perfd 0770 root system
-    chmod 2770 /data/system/perfd
+    mkdir /data/vendor/perfd 0770 root system
+    chmod 2770 /data/vendor/perfd
+    rm /data/vendor/perfd/default_values
 
     # Create IOP  deamon related dirs
     mkdir /data/misc/iop 0770 root system
@@ -331,19 +332,6 @@ on post-fs-data
     mkdir /persist/data/tz 0700 system system
     mkdir /data/misc/dts 0770 media audio
     mkdir /data/misc/audio_pp 0771 media audio
-
-    # Create PERFD deamon related dirs
-    mkdir /data/system/perfd 2770 root system
-    rm /data/system/perfd/default_values
-    # start perfd
-
-    # Sustained power and vr mode
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
-    chmod 0660 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chmod 0660 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chown system system /sys/class/devfreq/gpubw/min_freq
-    chmod 0660 /sys/class/devfreq/gpubw/min_freq
 
 on property:sys.boot_completed=1
     write /dev/kmsg "Boot completed "
