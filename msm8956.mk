@@ -285,8 +285,7 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.qcom.sh \
-    init.qcom.bt.sh
+    init.qcom.sh
 
 # Device Settings
 PRODUCT_PACKAGES += \
