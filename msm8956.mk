@@ -285,7 +285,8 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.qcom.sh
+    init.qcom.sh \
+    init.qcom.post_boot.sh
 
 # Device Settings
 PRODUCT_PACKAGES += \
@@ -321,6 +322,31 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9330.xml:system/etc/sound_trigger_mixer_paths_wcd9330.xml \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9335.xml:system/etc/sound_trigger_mixer_paths_wcd9335.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:system/etc/sound_trigger_platform_info.xml
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext \
+    ims-ext-common
+
+PRODUCT_BOOTJARS += \
+    telephony-ext
+
+# TextClassifier smart selection model files
+PRODUCT_PACKAGES += \
+    textclassifier.smartselection.bundle1 \
+    textclassifier.smartselection.ar.model \
+    textclassifier.smartselection.de.model \
+    textclassifier.smartselection.en.model \
+    textclassifier.smartselection.es.model \
+    textclassifier.smartselection.fr.model \
+    textclassifier.smartselection.it.model \
+    textclassifier.smartselection.nl.model \
+    textclassifier.smartselection.pl.model \
+    textclassifier.smartselection.pt.model \
+    textclassifier.smartselection.ru.model \
+    textclassifier.smartselection.tr.model \
+    textclassifier.smartselection.zh.model \
+    textclassifier.smartselection.zh-Hant.model
 
 # WCNSS
 PRODUCT_COPY_FILES += \
