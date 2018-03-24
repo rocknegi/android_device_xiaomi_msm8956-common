@@ -1,3 +1,4 @@
 r_dir_file(mm-qcamerad, dsp_file);
 
 allow mm-qcamerad sysfs:file { r_file_perms };
+allow mm-qcamerad sysfs:file { r_file_perms };
