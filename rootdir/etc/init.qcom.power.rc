@@ -131,8 +131,8 @@ on property:sys.boot_completed=1
     write /sys/kernel/cpu_input_boost/ib_duration_ms 1000
     write /sys/kernel/cpu_input_boost/enabled 1
 
-    # Disable touchboost
-    write /sys/module/msm_performance/parameters/touchboost 0
+    # Adrenoboost
+    write /sys/class/kgsl/kgsl-3d0/devfreq/adrenoboost 1
 
 on charger
     # Disable thermal
