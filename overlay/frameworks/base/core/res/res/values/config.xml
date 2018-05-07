@@ -391,4 +391,8 @@
 <!--  Night display -->
     <bool name="config_nightDisplayAvailable">true</bool>
 
+<bool name="config_button_brightness_support">true</bool>
+
+
+
 </resources>
